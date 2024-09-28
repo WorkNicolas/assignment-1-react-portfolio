@@ -1,0 +1,25 @@
+/* Color Scheme */
+body {
+    background-color: #f2f2f2;
+}
+header, footer {
+    background-color: #3a3622;
+}
+header h1, footer {
+    color: #fceda1;
+}
+nav, aside {
+    background-color: #c9bd80;
+}
+main {
+    background-color: #fceda1;
+}
+main h2 {
+    color: #302d1f;
+}
+/* Desktop View*/
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+}
