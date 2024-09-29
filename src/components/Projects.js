@@ -5,7 +5,7 @@
  * 
  * @returns {Header}
  */
-
+import hotel from './assets/hotel.png'
 import pinoyflix from './assets/pinoyflix.png';
 
 const Projects = () => {
@@ -13,6 +13,7 @@ const Projects = () => {
         <div>
             <h1>Projects</h1>
             <h2>Hotel Reservation System - <a href="https://github.com/jcmsj/hotel/blob/main/doc/Group4_ProjectProposal.pdf">GitHub Link</a></h2>
+            <img src={hotel} alt="Hotel Reservation Ticket" width="560" height="315" />
             <ul>
                 <li>Developed a Java Swing application for managing hotel reservations, including room bookings, customer information, and payment processing</li>
                 <li>Used MySQL and Java Database Connectivity, creating tables, unit tests, and sample data</li>
