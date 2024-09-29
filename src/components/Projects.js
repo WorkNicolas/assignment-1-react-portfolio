@@ -1,6 +1,8 @@
 /**
  * @file Projects.js
  * @author Carl Nicolas Mendoza
+ * @id 301386435
+ * @date 2024-09-28
  * @description Contains three projects of the webapp's author.
  * 
  * @returns {Header}

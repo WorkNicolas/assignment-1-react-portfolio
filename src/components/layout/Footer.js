@@ -1,3 +1,13 @@
+/**
+ * @file Header.js
+ * @author Carl Nicolas Mendoza
+ * @id 301386435
+ * @date 2024-09-28
+ * @description Contains the logo and company name of the webapp.
+ * 
+ * @returns {Footer}
+ */
+
 const Footer = () => {
     return (
         <footer>

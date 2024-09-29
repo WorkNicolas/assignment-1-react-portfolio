@@ -1,6 +1,8 @@
 /**
  * @file Home.js
  * @author Carl Nicolas Mendoza
+ * @id 301386435
+ * @date 2024-09-28
  * @description Contains the welcome message, mission statement, and site map.
  * 
  * @returns {Header}

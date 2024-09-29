@@ -1,6 +1,8 @@
 /**
  * @file Contacts.js
  * @author Carl Nicolas Mendoza
+ * @id 301386435
+ * @date 2024-09-28
  * @description Contains the contact information of the author.
  * 
  * @returns {Header}
