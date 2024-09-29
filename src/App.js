@@ -8,6 +8,7 @@
  * @returns {App}
  */
 import { Route, Routes } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 // CSS
 import './App.css';
@@ -24,9 +25,15 @@ import Projects from './components/Projects';
 import Services from './components/Services';
 
 
+
 function App() {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Chlora</title>
+        <meta name="description" content="Chlora React Webapp by Carl Nicolas Mendoza" />
+      </Helmet>
       <Navigation />
       <main>
         <Routes>
