@@ -15,6 +15,7 @@ const AboutMe = () => {
             <div id="floated">
                 <img src={headshot} alt="Headshot of Carl Nicolas Mendoza" width="90%"/>
             </div>
+            <p><span className="bold">Birthday:</span> May 28, 2003</p>
             <p>As a Software Engineering Technology Advanced Diploma student, I have honed my skills in database management, full-stack development, and debugging web applications through hands-on projects. Proficient in languages like C#, Java, Python, HTML/CSS, JavaScript, and frameworks like C#, Figma, and ReactJS, I am well-versed in Agile methodologies, user-centered design, and SDLC processes. Committed to security best practices, I have implemented SHA-256 encryption for password protection. Additionally, I am adept at using industry-standard tools such as Git, Visual Studio Code, Visual Studio 2022, IntelliJ, MS Visio, and MS Office.</p>
             <h3>Currently residing in Ontario, Canada</h3>
             <ul>

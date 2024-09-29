@@ -183,6 +183,10 @@ input[type="text"] {
 .panel h3 {
     border-bottom: 1px solid gray;
 }
+/* Bold */
+.bold {
+    font-weight: bold;
+}
 /* Button */
 input[type="submit"], input[type="reset"] {
     margin: 1.6%;
