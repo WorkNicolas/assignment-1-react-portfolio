@@ -9,6 +9,7 @@ const Contacts = () => {
     return (
         <div>
             <h1>Contacts</h1>
+            <p><a href="tel:+14377332225">437-733-2225</a></p>
             <h2>Connect with me</h2>
             <a href="https://www.linkedin.com/in/worknicolas/" >
             <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn Profile Link" />

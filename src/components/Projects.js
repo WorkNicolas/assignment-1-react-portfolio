@@ -1,3 +1,10 @@
+/**
+ * @file Projects.js
+ * @author Carl Nicolas Mendoza
+ * @description Contains three projects of the webapp's author.
+ * 
+ * @returns {Header}
+ */
 
 import pinoyflix from './assets/pinoyflix.png';
 

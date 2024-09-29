@@ -11,7 +11,6 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 // Layout
-import Header from './components/layout/Header';
 import Navigation from './components/layout/Navigation';
 import Footer from './components/layout/Footer';
 

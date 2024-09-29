@@ -13,24 +13,25 @@
     font-family: sans-serif;
     --text-primary: #575353;
     --text-secondary: #6e6161;
-    --bg-primary: #23232c;
-    --bg-secondary: #141418;
+    --bg-primary: #f2f2f2;
+    --bg-secondary: #d2d0ca;
 }
 /* Color Scheme */
 body {
     background-color: #f2f2f2;
-    color: #333333;
+    color: var(--text-primary);
     margin: 0;
     padding: 0;
 }
 header {
-    background-color: #d2d0ca;
+    background-color: var(--bg-secondary);
     border-bottom: 1px solid gray;
 }
 header h1 {
     color: #595751;
 }
 footer {
+    margin-top: auto;
     background-color: #e6e3d9;
     border-top: 1px solid gray;
     height: 64px;
@@ -45,6 +46,9 @@ nav, aside {
 }
 main {
     margin-left: 5rem;
+    min-height: 94vh;
+    display: flex;
+    flex-direction: column;
 }
 body::-webkit-scrollbar {
     width: 0.25rem;
@@ -114,6 +118,13 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
 }
 
+/* Columns */
+#floated {
+    margin-left: 1.6%;
+    float: left;
+    width: 20vw;
+}
+
 
 /* About Me */
 main {
@@ -125,8 +136,11 @@ main h1, h2, h3 {
 main li {
     margin-bottom: 1.6%;
 }
-main img, iframe{
+main img, iframe, figcaption{
     margin-left: 1.6%;
+}
+figcaption {
+    font-style: italic;
 }
 main p {
     margin-right: 1.6%;
