@@ -5,11 +5,38 @@
  * 
  * @returns {Header}
  */
+//React
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+// FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons/faCircleInfo';
 import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
 const Contacts = () => {
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        phone: '',
+        email: '',
+        message: '',
+    });
+    const navigate = useNavigate();
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Form submitted:', formData);
+        navigate('/');
+    };
     return (
         <div>
             <h1>Contacts</h1>
@@ -31,27 +58,29 @@ const Contacts = () => {
                 <img src="https://skillicons.dev/icons?i=gmail" alt="Mail to my GMail" />
                 </a>
             </div>
-            <fieldset>
-                <legend>Contact Form</legend>
-                <div class="block">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" />
-                </div>
-                <div class="block">
-                    <label for="phone">Your Phone Number:</label>
-                    <input type="text" id="phone" name="phone" />
-                </div>
-                <div class="block">
-                    <label for="email">Your Email:</label>
-                    <input type="text" id="email" name="email" />
-                </div>
-                <div className="block">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" placeholder="Type a message to the author."></textarea>
-                </div>
-        </fieldset>
-        <input type="submit" value="Submit" />
-        <input type="reset" value="Reset"></input>
+            <form onSubmit={handleSubmit}>
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <div class="block">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" />
+                    </div>
+                    <div class="block">
+                        <label for="phone">Your Phone Number:</label>
+                        <input type="text" id="phone" name="phone" />
+                    </div>
+                    <div class="block">
+                        <label for="email">Your Email:</label>
+                        <input type="text" id="email" name="email" />
+                    </div>
+                    <div className="block">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Type a message to the author."></textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+            </form>
         </div>
     );
 }
