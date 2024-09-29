@@ -95,6 +95,7 @@ main p {
     margin-right: 1.6%;
     margin-left: 1.6%;
     text-align: justify;
+    line-height: 2;
 }
 main h2 {
     border-bottom: 0.2px solid rgb(213, 205, 205);
